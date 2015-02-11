@@ -20,7 +20,45 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+In a Rspec example you can use the timecopped method to freeze time for the
+subject of the example:
+
+```
+class Foobar
+  def self.hi
+    OtherObject.time_check(Time.now)
+    'hi'
+  end
+end
+
+describe Foobar do
+  let(:now) { Time.now }
+  before do
+    expect(OtherObject).to receive(:time_check)
+      .with(now)
+  end
+
+  describe 'without the helper' do
+    subject do
+      result = nil
+      Timecop.freeze(now) { result = Foobar.hi }
+      result
+    end
+    it { should eq('hi') }
+  end
+
+  describe 'with the helper' do
+    subject { timecopped(now) { Foobar.hi } }
+    it { should eq('hi') }
+  end
+end
+```
+
+Without Timecop.freeze the value for Time.now being passed into ObjectOther#time_check could not be consistently checked.
+And using #timecopped hides away example how Timecop.freeze is used so that we can see the subject call more clearly.
+
+## Related
+* https://github.com/travisjeffery/timecop/pull/119
 
 ## Contributing
 
