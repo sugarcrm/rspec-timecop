@@ -1,6 +1,6 @@
 # Rspec::Timecop
 
-TODO: Write a gem description
+RSpec extension for controlling time within examples.
 
 ## Installation
 
