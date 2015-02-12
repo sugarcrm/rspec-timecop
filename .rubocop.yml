@@ -1,0 +1,7 @@
+AllCops:
+  Exclude:
+    - 'rspec-timecop.gemspec'
+    - 'lib/rspec/timecop/version.rb'
+
+Documentation:
+  Enabled: false

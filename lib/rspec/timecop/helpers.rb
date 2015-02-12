@@ -1,10 +1,7 @@
-require 'rspec/core'
-require 'timecop'
-
 module Rspec
   module Timecop
     module Helpers
-      def timecopped(time, &block)
+      def timecopped(time)
         result = nil
         ::Timecop.freeze(time) { result = yield }
         result
