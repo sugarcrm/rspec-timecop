@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Rspec::Timecop::VERSION
   spec.authors       = ['Andrew Sullivan Cant']
   spec.email         = ['acant@sugarcrm.com']
-  spec.summary       = %q{RSpec extension to controlling time.}
-  spec.description   = %q{Provides helper methods for using timecop in RSpec examples.}
+  spec.summary       = %q{RSpec extension to control time.}
+  spec.description   = %q{Provides helper methods for using Timecop in RSpec examples.}
   spec.homepage      = 'http://github.com/sugarcrm/rspec-timecop'
   spec.license       = 'MIT'
 
