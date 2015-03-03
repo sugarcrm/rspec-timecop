@@ -5,7 +5,7 @@ require 'rspec/timecop/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'rspec-timecop'
-  spec.version       = Rspec::Timecop::VERSION
+  spec.version       = RSpec::Timecop::VERSION
   spec.authors       = ['Andrew Sullivan Cant']
   spec.email         = ['acant@sugarcrm.com']
   spec.summary       = %q{RSpec extension to control time.}

@@ -1,4 +1,4 @@
-# Rspec::Timecop
+# RSpec::Timecop
 
 RSpec extension for controlling time within examples.
 
@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-In a Rspec example you can use the timecopped method to freeze time for the
+In a RSpec example you can use the timecopped method to freeze time for the
 subject of the example:
 
 ```

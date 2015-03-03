@@ -1,6 +1,6 @@
 require 'rspec/timecop'
 
-describe Rspec::Timecop::Helpers do
+describe RSpec::Timecop::Helpers do
   describe '#timecopped' do
     subject { timecopped(now) { Time.now } }
 

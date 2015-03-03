@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-module Rspec
+module RSpec
   module Timecop
     module Helpers
       def timecopped(time)
@@ -12,5 +12,5 @@ module Rspec
 end
 
 RSpec.configure do |config|
-  config.include(Rspec::Timecop::Helpers)
+  config.include(RSpec::Timecop::Helpers)
 end
