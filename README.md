@@ -1,5 +1,7 @@
 # RSpec::Timecop
 
+[![Gem Version](https://badge.fury.io/rb/rspec-timecop.svg)](http://badge.fury.io/rb/rspec-timecop)
+
 RSpec extension for controlling time within examples.
 
 ## Installation
