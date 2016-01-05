@@ -70,8 +70,12 @@ And using #timecopped hides away example how Timecop.freeze is used so that we c
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/rspec-timecop/fork )
+1. Fork it ( https://github.com/sugarcrm/rspec-timecop/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+## License
+
+Copyright 2015 [SugarCRM Inc.](http://sugarcrm.com), released under the MIT License.
