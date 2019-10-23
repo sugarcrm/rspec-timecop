@@ -7,6 +7,7 @@
 [![License](http://img.shields.io/badge/license-MIT-green.svg?style=flat)](LICENSE.txt)
 
 [![Inline docs](http://inch-ci.org/github/sugarcrm/rspec-timecop.svg)](http://inch-ci.org/github/sugarcrm/rspec-timecop)
+[![RubyDoc](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://rubydoc.org/gems/rspec-timecop)
 
 RSpec extension for controlling time within examples.
 
