@@ -1,4 +1,4 @@
-require 'rspec/timecop'
+require 'spec_helper'
 
 describe RSpec::Timecop::Helpers do
   describe '#timecopped' do
