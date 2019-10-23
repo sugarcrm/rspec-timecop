@@ -1,3 +1,33 @@
 language: ruby
 rvm:
   - 2.0.0
+  - 2.1
+  - 2.2
+  - 2.3
+  - 2.4
+  - 2.5
+  - 2.6.2
+  - ruby-head
+  - jruby
+matrix:
+  exclude:
+    - rvm: jruby
+      os: osx
+    - rvm: ruby-head
+      os: osx
+  allow_failures:
+    - rvm: ruby-head
+    - rvm: jruby
+os:
+  - linux
+  - osx
+sudo: false
+cache:
+  bundler: true
+
+# HACK: Continue to use bundler <2 because of Ruby v2.2 support. Once the
+# lowest dependency is Ruby v2.3 we can consider upgrading to Bundler 2.x.
+# @see https://docs.travis-ci.com/user/languages/ruby/#bundler-20
+before_install:
+  - gem uninstall -v '>= 2' -i $(rvm gemdir)@global -ax bundler || true
+  - gem install bundler -v '< 2'
