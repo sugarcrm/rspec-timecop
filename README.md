@@ -9,7 +9,7 @@
 [![Inline docs](http://inch-ci.org/github/sugarcrm/rspec-timecop.svg)](http://inch-ci.org/github/sugarcrm/rspec-timecop)
 [![RubyDoc](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://rubydoc.org/gems/rspec-timecop)
 
-RSpec extension for controlling time within examples.
+RSpec extension for controlling time within examples, using the [timecop gem](https://github.com/travisjeffery/timecop).
 
 ## Installation
 
@@ -68,6 +68,25 @@ And using #timecopped hides away example how Timecop.freeze is used so that we c
 
 ## Related
 * https://github.com/travisjeffery/timecop/pull/119
+
+## Elsewhere on the web
+
+Links to other places on the web where this projects exists:
+
+* [Code Climate](https://codeclimate.com/github/sugarcrm/rspec-timecop)
+* [InchCI](http://inch-ci.org/github/sugarcrm/rspec-timecop)
+* [Github](https://github.com/sugarcrm/rspec-timecop)
+* [OpenHub](https://www.openhub.net/p/rspec-timecop)
+* [RubyDoc](http://rubydoc.org/gems/rspec-timecop)
+* [RubyGems](https://rubygems.org/gems/rspec-timecop)
+* [Ruby LibHunt](https://ruby.libhunt.com/rspec-timecop-alternatives)
+* [Ruby Toolbox](https://www.ruby-toolbox.com/projects/rspec-timecop)
+* [TravisCI](https://travis-ci.org/sugarcrm/rspec-timecop)
+
+## Similar Projects
+
+* [timecop-rspec](https://github.com/avantoss/timecop-rspec), similar ideas but
+  a different implementation
 
 ## Contributing
 
