@@ -1,7 +1,6 @@
 # RSpec::Timecop
 
 [![Gem Version](https://badge.fury.io/rb/rspec-timecop.svg)](http://badge.fury.io/rb/rspec-timecop)
-[![Dependency Status](https://gemnasium.com/sugarcrm/rspec-timecop.svg)](https://gemnasium.com/sugarcrm/rspec-timecop)
 [![Build Status](https://travis-ci.org/sugarcrm/rspec-timecop.svg?branch=master)](https://travis-ci.org/sugarcrm/rspec-timecop)
 [![Coverage Status](http://img.shields.io/coveralls/sugarcrm/rspec-timecop/master.svg)](https://coveralls.io/r/sugarcrm/rspec-timecop)
 [![Code Climate](https://codeclimate.com/github/sugarcrm/rspec-timecop/badges/gpa.svg)](https://codeclimate.com/github/sugarcrm/rspec-timecop)
