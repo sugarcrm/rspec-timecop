@@ -24,5 +24,11 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler',    '~> 1.7'
   spec.add_development_dependency 'rake',       '~> 10.0'
   spec.add_development_dependency 'rspec',      '~> 2.99.0'
+
+  # Dependencies whose APIs we do not really depend upon, and can be upgraded
+  # without limiting.
+  spec.add_development_dependency 'bundler-audit'
+  spec.add_development_dependency 'license_finder'
+  spec.add_development_dependency 'rubocop-rspec'
   spec.add_development_dependency 'simplecov'
 end

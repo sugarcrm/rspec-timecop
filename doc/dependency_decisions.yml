@@ -1,0 +1,25 @@
+---
+- - :ignore_group
+  - development
+  - :who: Andrew Sullivan Cant <mail@andrewsullivancant.ca>
+    :why: 
+    :versions: []
+    :when: 2018-06-13 15:20:17.351348000 Z
+- - :whitelist
+  - Apache 2.0
+  - :who: Andrew Sullivan Cant <mail@andrewsullivancant.ca>
+    :why: SugarCRM's primary approved open source license
+    :versions: []
+    :when: 2018-06-18 19:28:33.314061000 Z
+- - :whitelist
+  - MIT
+  - :who: Andrew Sullivan Cant <mail@andrewsullivancant.ca>
+    :why: SugarCRM's secondary approved open source license
+    :versions: []
+    :when: 2018-06-13 15:18:36.240771000 Z
+- - :whitelist
+  - BSD
+  - :who: Andrew Sullivan Cant <mail@andrewsullivancant.ca>
+    :why: SugarCRM's secondary approved open source license
+    :versions: []
+    :when: 2018-06-18 19:29:15.003697000 Z
