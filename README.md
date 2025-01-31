@@ -6,8 +6,8 @@
 [![Test Coverage](https://codeclimate.com/github/sugarcrm/rspec-timecop/badges/coverage.svg)](https://codeclimate.com/github/sugarcrm/rspec-timecop/coverage)
 [![License](http://img.shields.io/badge/license-MIT-green.svg?style=flat)](LICENSE.txt)
 
-[![Inline docs](http://inch-ci.org/github/sugarcrm/rspec-timecop.svg)](http://inch-ci.org/github/sugarcrm/rspec-timecop)
 [![RubyDoc](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://rubydoc.org/gems/rspec-timecop)
+[![CucumberReports: rspec-timecop](https://messages.cucumber.io/api/report-collections/90896a4c-93cc-47e8-9e26-12d0df876651/badge)](https://reports.cucumber.io/report-collections/90896a4c-93cc-47e8-9e26-12d0df876651)
 
 RSpec extension for controlling time within examples, using the [timecop gem](https://github.com/travisjeffery/timecop).
 
@@ -74,14 +74,13 @@ And using #timecopped hides away example how Timecop.freeze is used so that we c
 Links to other places on the web where this projects exists:
 
 * [Code Climate](https://codeclimate.com/github/sugarcrm/rspec-timecop)
-* [InchCI](http://inch-ci.org/github/sugarcrm/rspec-timecop)
+* [CucumberReports](https://reports.cucumber.io/report-collections/90896a4c-93cc-47e8-9e26-12d0df876651)
 * [Github](https://github.com/sugarcrm/rspec-timecop)
 * [OpenHub](https://www.openhub.net/p/rspec-timecop)
-* [RubyDoc](http://rubydoc.org/gems/rspec-timecop)
+* [RubyDoc](https://rubydoc.org/gems/rspec-timecop)
 * [RubyGems](https://rubygems.org/gems/rspec-timecop)
 * [Ruby LibHunt](https://ruby.libhunt.com/rspec-timecop-alternatives)
 * [Ruby Toolbox](https://www.ruby-toolbox.com/projects/rspec-timecop)
-* [TravisCI](https://travis-ci.org/sugarcrm/rspec-timecop)
 
 ## Similar Projects
 
@@ -98,4 +97,4 @@ Links to other places on the web where this projects exists:
 
 ## License
 
-Copyright 2015 [SugarCRM Inc.](http://sugarcrm.com), released under the MIT License.
+Copyright 2025 [SugarCRM Inc.](http://sugarcrm.com), released under the [MIT License](https://opensource.org/license/MIT).
