@@ -1,10 +1,21 @@
 require: rubocop-rspec
 
 AllCops:
-  Exclude:
-    - 'vendor/**/*'
-    - 'rspec-timecop.gemspec'
-    - 'lib/rspec/timecop/version.rb'
+  NewCops: enable
 
-Documentation:
+Gemspec/DevelopmentDependencies:
+  EnforcedStyle: gemspec
+
+Metrics/MethodLength:
+  Max: 20
+
+RSpec/EmptyExampleGroup:
   Enabled: false
+
+# Because of the way that blocks are used in RSpecs can end up being long when
+# example groups are nested or many examples are checked.
+# A similar pattern exists in the DSL for gemspec files.
+Metrics/BlockLength:
+  Exclude:
+    - '*.gemspec'
+    - 'spec/**/*'
