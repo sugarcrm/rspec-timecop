@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe RSpec::Timecop::Helpers do
@@ -6,6 +8,6 @@ describe RSpec::Timecop::Helpers do
 
     let(:now) { Time.parse('2015-01-01') }
 
-    it { should eq(now) }
+    it { is_expected.to eq(now) }
   end
 end
