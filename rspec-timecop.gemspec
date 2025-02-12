@@ -32,6 +32,7 @@ Gem::Specification.new do |spec|
   # without limiting.
   spec.add_development_dependency 'bundler-audit'
   spec.add_development_dependency 'license_finder'
+  spec.add_development_dependency 'logger'
   spec.add_development_dependency 'rubocop'
   spec.add_development_dependency 'rubocop-performance'
   spec.add_development_dependency 'rubocop-rake'
