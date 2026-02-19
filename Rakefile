@@ -18,7 +18,6 @@ RuboCop::RakeTask.new(:rubocop) do |task|
   rubocop_report_pathname =
     Pathname(Rake.application.original_dir).join('tmp', 'rubocop.txt')
   rubocop_report_pathname.dirname.mkpath
-  task.requires << 'rubocop-rspec'
   task.options =
     %w[
       --display-cop-names
