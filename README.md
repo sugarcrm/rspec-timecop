@@ -2,8 +2,6 @@
 
 [![Gem Version](https://badge.fury.io/rb/rspec-timecop.svg)](http://badge.fury.io/rb/rspec-timecop)
 [![Build Status](https://github.com/sugarcrm/rspec-timecop/actions/workflows/ci.yml/badge.svg)](https://github.com/sugarcrm/rspec-timecop/actions/workflows/ci.yml)
-[![Code Climate](https://codeclimate.com/github/sugarcrm/rspec-timecop/badges/gpa.svg)](https://codeclimate.com/github/sugarcrm/rspec-timecop)
-[![Test Coverage](https://codeclimate.com/github/sugarcrm/rspec-timecop/badges/coverage.svg)](https://codeclimate.com/github/sugarcrm/rspec-timecop/coverage)
 [![License](http://img.shields.io/badge/license-MIT-green.svg?style=flat)](LICENSE.txt)
 
 [![RubyDoc](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://rubydoc.info/gems/rspec-timecop)
@@ -72,7 +70,6 @@ And using #timecopped hides away example how Timecop.freeze is used so that we c
 
 Links to other places on the web where this projects exists:
 
-* [Code Climate](https://codeclimate.com/github/sugarcrm/rspec-timecop)
 * [Github](https://github.com/sugarcrm/rspec-timecop)
 * [OpenHub](https://www.openhub.net/p/rspec-timecop)
 * [RubyDoc](https://rubydoc.info/gems/rspec-timecop)
