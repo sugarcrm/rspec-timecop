@@ -5,23 +5,6 @@ on:
       - cron: '0 1 * * 0' # every Sunday at 1am
 jobs:
   test:
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [ubuntu-20.04, macos-13]
-        ruby: [3.1, 3.2, 3.3, 3.4, head, jruby, jruby-head]
-    continue-on-error: ${{ endsWith(matrix.ruby, 'head') || endsWith(matrix.ruby, 'jruby') }}
-    runs-on: ${{ matrix.os }}
-    steps:
-    - uses: actions/checkout@v4
-    - uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: ${{ matrix.ruby }}
-        bundler-cache: true
-    - run: bundle exec rake spec
-  coverage:
-    needs: [ test ]
-    name: coverage
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -31,9 +14,20 @@ jobs:
     - run: bundle exec rake
       env:
         CUCUMBER_PUBLISH_TOKEN: ${{ secrets.CUCUMBER_PUBLISH_TOKEN }}
-    - uses: paambaati/codeclimate-action@v9.0.0
-      env:
-        CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+    # TODO: Consider a code climate replacement for reporting results.
+  matrix_tests:
+    needs: [ test ]
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        ruby: [3.1, 3.2, 3.3, 3.4, 4.0, head, jruby, jruby-head]
+    continue-on-error: ${{ endsWith(matrix.ruby, 'head') || endsWith(matrix.ruby, 'jruby') }}
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v4
+    - uses: ruby/setup-ruby@v1
       with:
-        coverageLocations: |
-          ${{ github.workspace }}/coverage/lcov/*.lcov:lcov
+        ruby-version: ${{ matrix.ruby }}
+        bundler-cache: true
+    - run: bundle exec rake spec
