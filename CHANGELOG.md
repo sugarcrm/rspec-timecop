@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [l.0.0] - 2026-02-23
+### Changed
+- update the gem version to 1.0.0, becuase it is stable and in use
+
 ## [0.4.0] - 2025-01-31
 ### Changed
 - minimum required Ruby version to 3.1.2, dropping support for 2.x and 3.0
