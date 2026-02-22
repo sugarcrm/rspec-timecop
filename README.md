@@ -92,4 +92,4 @@ Links to other places on the web where this projects exists:
 
 ## License
 
-Copyright 2025 [SugarCRM Inc.](http://sugarcrm.com), released under the [MIT License](https://opensource.org/license/MIT).
+Copyright 2026 [SugarCRM Inc.](http://sugarcrm.com), released under the [MIT License](https://opensource.org/license/MIT).
