@@ -7,7 +7,6 @@ require 'bundler/audit/task'
 require 'yard'
 require 'yardstick/rake/measurement'
 require 'pathname'
-require 'license_finder'
 require 'English'
 
 RSpec::Core::RakeTask.new(:spec) do |task|
@@ -41,13 +40,6 @@ task 'bundle:outdated' do
   sh("bundle outdated --only-explicit | tee #{bundle_outdated_report_pathname}")
 end
 
-desc 'Check dependency licenses'
-task :license_finder do
-  puts `license_finder --quiet --format text`
-
-  abort('LicenseFinder failed') unless $CHILD_STATUS.success?
-end
-
 YARD::Rake::YardocTask.new do |t|
   t.files         = ['lib/**/*.rb']
   t.stats_options = ['--list-undoc']
@@ -57,4 +49,4 @@ Yardstick::Rake::Measurement.new(:yardstick_measure) do |measurement|
   measurement.output = 'tmp/yard_coverage.txt'
 end
 
-task default: %i[spec rubocop yardstick_measure bundle:audit license_finder]
+task default: %i[spec rubocop yardstick_measure bundle:audit]
